@@ -1,0 +1,709 @@
+{
+	"info": {
+		"_postman_id": "3dbcdcdb-994a-46fc-872f-d21121454058",
+		"name": "Booking system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Farzane\",\n    \"user_name\": \"f.khazaei\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/employees",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Farzane khazaei\",\n    \"email\": \"ms.khazaei007@gmail.com\",\n    \"mobile\": \"09122983203\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/employees/1",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"employees",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/employees/1",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"employees",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/employees/1",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"employees",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/employees",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Entity Type",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Desk\",\n    \"description\": \"a piece of furniture with a flat or sloping surface and typically with drawers, at which one can read, write, or do other work.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/entity-types",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"entity-types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Desk\",\n    \"description\": \"a piece of furniture with a flat or sloping surface and typically with drawers, at which one can read, write, or do other work.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/entity-types/1",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"entity-types",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/entity-types/1",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"entity-types",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/entity-types/1",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"entity-types",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/entity-types",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"entity-types"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Entity",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Desk 1\",\n    \"description\": \"a piece of furniture with a flat or sloping surface and typically with drawers, at which one can read, write, or do other work.\",\n    \"entity_type\":{\n        \"id\": 1\n    },\n    \"max_simultaneous_booking\": 1,\n    \"available_in_holidays\":true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/entities",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"entities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Desk 2\",\n    \"description\": \"a piece of furniture with a flat or sloping surface and typically with drawers, at which one can read, write, or do other work.\",\n    \"entity_type\":{\n        \"id\": 1\n    },\n    \"max_simultaneous_booking\": 1,\n    \"available_in_holidays\":true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/entities/1",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"entities",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/entities/1",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"entities",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/entities/2",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"entities",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/entities",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"entities"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Entity Facility",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entity_id\": 1,\n    \"facility_id\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/entitiy-facility",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"entitiy-facility"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entity_id\": 1,\n    \"facility_id\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/entity_facility/1",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"entity_facility",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/entity_facility/1",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"entity_facility",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/entity_facility/2",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"entity_facility",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/entity_facility",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"entity_facility"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Facility",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"chair\",\n    \"description\": \"a piece of furniture with a flat or sloping surface and typically with drawers, at which one can read, write, or do other work.\",\n    \"entity_type\":{\n        \"id\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/facilities",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"facilities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"chair 2\",\n    \"description\": \"a piece of furniture with a flat or sloping surface and typically with drawers, at which one can read, write, or do other work.\",\n    \"entity_type\":{\n        \"id\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/facilities/1",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"facilities",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/facilities/3",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"facilities",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/facilities/1",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"facilities",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/facilities",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"facilities"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Booking",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entity_id\":1,\n    \"facility_id\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/entity-facility",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"entity-facility"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/bookings/1",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"bookings",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/bookings/1",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"bookings",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}/{{api_prefix}}/bookings",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"{{api_prefix}}",
+								"bookings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "local_url",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		},
+		{
+			"key": "api_prefix",
+			"value": "api/v1",
+			"type": "string"
+		}
+	]
+}
